@@ -37,11 +37,13 @@ public class Merge {
     }
 
     public static void main(String[] args) {
-        int[] data = {6, 3, 3, 7, 1, 21, 3, 7, 2, 25};
+        int[] data = {69, 10, 30, 2, 16, 8, 31, 22};
+
         Merge merge = new Merge();
+        //정렬
         merge.mergeSort(data, 0, data.length - 1);
-        for (Integer n : data) {
-            System.out.print(n + " ");
-        }
+        //정렬된 데이터 출력
+        System.out.println("--------------------\n합병 정렬 최종 결과:");
+        Util.printArr(data);
     }
 }
