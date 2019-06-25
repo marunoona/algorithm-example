@@ -4,13 +4,15 @@ public class Insertion {
 
     private void sort(int[] data) {
         int length = data.length;
-        int temp, j;
+        int tmp, aux;
         for (int i = 1; i < length; i++) {
-            temp = data[i];
-            for (j = i - 1; j >= 0 && temp < data[j]; j--) {
-                data[j + 1] = data[j];
+            tmp = data[i];
+            aux = i -1;
+            while ((aux >= 0) && (data[aux] > tmp)) {
+               data[aux + 1] = data[aux];
+               aux--;
             }
-            data[j + 1] = temp;
+            data[aux + 1] = tmp;
         }
 
     }
@@ -20,10 +22,12 @@ public class Insertion {
 
         int[] data = {66, 10, 35, 3, 6, 1, 12};
 
+        //정렬
         insertion.sort(data);
 
-        for (Integer n : data) {
-            System.out.print(n + " ");
-        }
+        //정렬된 데이터 출력
+        System.out.println("--------------------\n삽입 정렬 최종 결과:");
+        Util.printArr(data);
+
     }
 }
