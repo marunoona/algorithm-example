@@ -1,7 +1,5 @@
 package sorting;
 
-import java.util.Arrays;
-
 public class Merge {
     private void mergeSort(int[] data, int p, int q) {
         int mid;
@@ -45,15 +43,5 @@ public class Merge {
         for (Integer n : data) {
             System.out.print(n + " ");
         }
-
-        System.out.println("\n------------------------------");
-        System.out.println(Math.min(Double.MIN_VALUE, 0.0d));
-        System.out.println( 1.0 / 0.0 );
-
-
-        char[] chars = new char[] {'\u0097'};
-        String str = new String(chars);
-        byte[] bytes = str.getBytes();
-        System.out.println(Arrays.toString(bytes));
     }
 }
