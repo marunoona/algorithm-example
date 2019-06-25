@@ -4,7 +4,6 @@ public class Selection {
     private void sort(int[] data) {
         int size = data.length;
         int min;    //최저 값을 담을 요소
-        int temp;
 
         //배열의 값 중 최소값을 찾아서 위치를 변경
         for (int i = 0; i < size - 1; i++) {
