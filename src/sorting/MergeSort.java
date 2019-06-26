@@ -1,6 +1,6 @@
 package sorting;
 
-public class Merge {
+public class MergeSort {
     /**
      *
      * @param data 정렬해야 할 데이터 배열
@@ -52,9 +52,9 @@ public class Merge {
     public static void main(String[] args) {
         int[] data = {69, 10, 30, 2, 16, 8, 31, 22};
 
-        Merge merge = new Merge();
+        MergeSort mergeSort = new MergeSort();
         //정렬
-        merge.mergeSort(data, 0, data.length - 1);
+        mergeSort.mergeSort(data, 0, data.length - 1);
         //정렬된 데이터 출력
         System.out.println("--------------------\n합병 정렬 최종 결과:");
         Util.printArr(data);

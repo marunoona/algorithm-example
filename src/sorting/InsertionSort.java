@@ -1,6 +1,6 @@
 package sorting;
 
-public class Insertion {
+public class InsertionSort {
 
     private void sort(int[] data) {
         int length = data.length;
@@ -18,12 +18,12 @@ public class Insertion {
     }
 
     public static void main(String[] args) {
-        Insertion insertion = new Insertion();
+        InsertionSort insertionSort = new InsertionSort();
 
         int[] data = {66, 10, 35, 3, 6, 1, 12};
 
         //정렬
-        insertion.sort(data);
+        insertionSort.sort(data);
 
         //정렬된 데이터 출력
         System.out.println("--------------------\n삽입 정렬 최종 결과:");

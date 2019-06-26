@@ -1,6 +1,6 @@
 package sorting;
 
-public class Bubble {
+public class BubbleSort {
     private void sort(int[] data) {
         for (int i = data.length - 1; i > 0; i--) {
             System.out.println("\n버블 정렬 " + (data.length - i) + "단계");
@@ -15,11 +15,11 @@ public class Bubble {
     }
 
     public static void main(String[] args) {
-        Bubble bubble = new Bubble();
+        BubbleSort bubbleSort = new BubbleSort();
         int[] data = {66, 10, 45, 3, 1};
 
         //버블 정렬
-        bubble.sort(data);
+        bubbleSort.sort(data);
         //정렬된 데이터 출력
         System.out.println("--------------------\n버블 정렬 최종 결과:");
         Util.printArr(data);

@@ -1,6 +1,6 @@
 package sorting;
 
-public class Selection {
+public class SelectionSort {
     private void sort(int[] data) {
         int size = data.length;
         int min;    //최저 값을 담을 요소
@@ -20,11 +20,11 @@ public class Selection {
     }
 
     public static void main(String[] args) {
-        Selection selection = new Selection();
+        SelectionSort selectionSort = new SelectionSort();
         int[] data = {69, 10, 30, 2, 16, 8};
 
         //정렬
-        selection.sort(data);
+        selectionSort.sort(data);
 
         //정렬된 배열 출력
         System.out.println("--------------------\n선택 정렬 최종 결과:");

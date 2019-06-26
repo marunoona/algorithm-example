@@ -1,6 +1,6 @@
 package sorting;
 
-public class Quick {
+public class QuickSort {
     /**
      * @param data  정렬할 데이터 배열
      * @param begin 배열의 시작 인덱스
@@ -15,10 +15,17 @@ public class Quick {
         }
     }
 
+    /**
+     *
+     * @param data
+     * @param begin 시작 인덱스 : pivot보다 크거나 같은 값을 찾음
+     * @param end   마지막 인덱스 : pivot보다 작은 값을 찾음
+     * @return
+     */
     private int partition(int[] data, int begin, int end) {
-        int left = begin;   //pivot보다 크거나 같은 값을 찾음
-        int right = end;    //pivot보다 작은 값을 찾음
-        int pivot = (left + right) / 2; //기준값
+        int left = begin;
+        int right = end;
+        int pivot = (left + right) / 2; //기준값 인덱스
         int i = 0;
         System.out.println("퀵 정렬 " + ++i + "단계: pivot: " + data[pivot]);
 
@@ -40,11 +47,11 @@ public class Quick {
 
     public static void main(String[] args) {
         int[] data = {69, 10, 30, 2, 16, 8, 31, 22};
-        Quick quick = new Quick();
+        QuickSort quickSort = new QuickSort();
         System.out.println("정렬 전 데이터 : ");
         Util.printArr(data);
         //정렬
-        quick.quickSort(data, 0, data.length - 1);
+        quickSort.quickSort(data, 0, data.length - 1);
         //정렬된 결과 출력
         System.out.println("--------------------\n버블 정렬 최종 결과:");
         Util.printArr(data);
