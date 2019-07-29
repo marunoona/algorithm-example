@@ -53,7 +53,7 @@ public class QuickSort {
         //정렬
         quickSort.quickSort(data, 0, data.length - 1);
         //정렬된 결과 출력
-        System.out.println("--------------------\n버블 정렬 최종 결과:");
+        System.out.println("--------------------\n퀵 정렬 최종 결과:");
         Util.printArr(data);
     }
 }

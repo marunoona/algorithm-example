@@ -8,8 +8,8 @@ public class StackQueue {
         Stack<T> deQueueStack;
 
         Queue() {
-            this.enQueueStack = new Stack<T>();
-            this.deQueueStack = new Stack<T>();
+            this.enQueueStack = new Stack<>();
+            this.deQueueStack = new Stack<>();
         }
 
         void enQueue(T value) {
