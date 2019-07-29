@@ -14,7 +14,6 @@ public class InsertionSort {
             }
             data[aux + 1] = tmp;
         }
-
     }
 
     public static void main(String[] args) {
